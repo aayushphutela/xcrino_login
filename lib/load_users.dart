@@ -56,6 +56,7 @@ class _LoadUsersState extends State<LoadUsers> {
                           leading: CircleAvatar(
                               backgroundImage:
                                   NetworkImage(usersData!.data[index].avatar)),
+                          subtitle: Text(usersData!.data[index].email),
                         );
                       },
                       separatorBuilder: (context, index) {
