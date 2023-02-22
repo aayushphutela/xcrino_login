@@ -20,6 +20,8 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               Flexible(
                 child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40),bottomRight:Radius.circular(40) )),
                   height: 400,
                   child: Image.asset(
                     'assets/images/xcrino.png',
@@ -36,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                   Align(
                     alignment: Alignment.topLeft,
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 40,top: 15),
+                      padding: const EdgeInsets.only(left: 40, top: 15),
                       child: Text(
                         "Login",
                         style: GoogleFonts.akshar(
@@ -58,8 +60,8 @@ class _LoginPageState extends State<LoginPage> {
                       children: [
                         TextFormField(
                           decoration: InputDecoration(
-
-                              contentPadding: EdgeInsets.fromLTRB(30, 15, 20, 15),
+                              contentPadding:
+                                  EdgeInsets.fromLTRB(30, 15, 20, 15),
                               hintText: "Username",
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(22))),
@@ -80,13 +82,13 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 22,right: 22),
+                    padding: const EdgeInsets.only(left: 22, right: 22),
                     child: Column(
                       children: [
                         TextFormField(
                           decoration: InputDecoration(
-
-                              contentPadding: EdgeInsets.fromLTRB(30, 15, 20, 15),
+                              contentPadding:
+                                  EdgeInsets.fromLTRB(30, 15, 20, 15),
                               hintText: "Password",
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(22))),
@@ -106,27 +108,29 @@ class _LoginPageState extends State<LoginPage> {
                       ],
                     ),
                   ),
-        Padding(
-          padding: const EdgeInsets.all(22.0),
-          child: Material(
-            elevation: 5,
-            borderRadius: BorderRadius.circular(22),
-            color: Colors.deepPurpleAccent,
-            child: MaterialButton(
-              onPressed: () {
-                // signIn(emailController.text, passwordController.text);
-              },
-              padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-              minWidth: MediaQuery.of(context).size.width,
-              child: Text(
-                'Sign In',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
-              ),
-            ),
-          ),
-        ),
+                  Padding(
+                    padding: const EdgeInsets.all(22.0),
+                    child: Material(
+                      elevation: 5,
+                      borderRadius: BorderRadius.circular(22),
+                      color: Colors.deepPurpleAccent,
+                      child: MaterialButton(
+                        onPressed: () {
+                          // signIn(emailController.text, passwordController.text);
+                        },
+                        padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+                        minWidth: MediaQuery.of(context).size.width,
+                        child: Text(
+                          'Sign In',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ),
                   // Container(
                   //   alignment: Alignment.bottomCenter,
                   //   height:140 ,
