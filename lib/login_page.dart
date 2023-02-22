@@ -25,6 +25,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 400,
                   child: Image.asset(
                     'assets/images/xcrino.png',
+                    fit: BoxFit.contain,
                   ),
                 ),
               ),
