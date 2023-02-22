@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:xcrino_login/list_screen.dart';
+
+import 'package:xcrino_login/load_users.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -157,6 +158,7 @@ class _LoginPageState extends State<LoginPage> {
     if (_formKey.currentState!.validate()) {
 
 
-       Navigator.push(context, MaterialPageRoute(builder: (context)=> ListScreen()));
+       Navigator.push(context, MaterialPageRoute(builder: (context)=> LoadUsers()));
+
       }
 }}
